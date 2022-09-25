@@ -16,13 +16,13 @@
 # s1: float = 0
 # s2: float = 0
 # el: float = 1
-# a = 1
-# while a >= d:
+# x = 1
+# while x >= d:
 #     n += 1
 #     s1 = s2 + p_el(n)
 #     n += 1
 #     s2 = s1 - p_el(n)
-#     a = s1 - s2
+#     x = s1 - s2
 # p = (s1 + s2) / 2
 # print(round(p, tch))
 

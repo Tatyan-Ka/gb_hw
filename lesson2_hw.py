@@ -3,70 +3,70 @@
 #  6782 -> 23
 # 0,56 -> 11
 
-a = input('Введите вещественное число:')
-s = 0
-for i in range(len(a)):
-    if a[i].isdigit():
-        s += int(a[i])
-print('сумма цифр числа:', s)
+# a = input('Введите вещественное число:')
+# s = 0
+# for i in range(len(a)):
+#     if a[i].isdigit():
+#         s += int(a[i])
+# print('сумма цифр числа:', s)
 
 
 # Задание 2 Напишите программу, которая принимает на вход число N и выдает набор произведений чисел от 1 до N.
 # # Пример:
 # # пусть N = 4, тогда [ 1, 2, 6, 24 ] (1, 1*2, 1*2*3, 1*2*3*4)
 
-N = int(input('Введите целое число N:'))
-Lst = []
-p = 1
-for i in range(1, N + 1, 1):
-    Lst.append(p * i)
-    p = int(Lst[i - 1])
-print(Lst)
+# N = int(input('Введите целое число N:'))
+# Lst = []
+# p = 1
+# for i in range(1, N + 1, 1):
+#     Lst.append(p * i)
+#     p = int(Lst[i - 1])
+# print(Lst)
 
 # Задание 3 Задайте список из n чисел последовательности (1+1/n)^n и выведите на экран их сумму,
 # округлённую до трёх знаков после точки.
 # # Пример:
 # # Для n = 6 -> 14.072
-
-N = int(input('Введите целое число N:'))
-List = []
-s = 0
-for i in range(1, N + 1, 1):
-    List.append((1 + 1 / i) ** i)
-    s += List[i - 1]
-print(round(s, 2))
+#
+# N = int(input('Введите целое число N:'))
+# List = []
+# s = 0
+# for i in range(1, N + 1, 1):
+#     List.append((1 + 1 / i) ** i)
+#     s += List[i - 1]
+# print(round(s, 2))
 
 # Задание 4 Задайте список из N элементов, заполненных числами из промежутка [-N, N].
-# Найдите произведение элементов на позициях a и b.
-# Значения N, a и b вводит пользователь с клавиатуры.
-
-N = int(input('Введите целое число N:'))
-Lst1 = []
-for i in range(-N, N+1, 1):
-    Lst1.append(i)
-print(Lst1[int(input('Введите a:')) - 1] * Lst1[int(input('Введите b:')) - 1])
+# Найдите произведение элементов на позициях x и b.
+# Значения N, x и b вводит пользователь с клавиатуры.
+#
+# N = int(input('Введите целое число N:'))
+# Lst1 = []
+# for i in range(-N, N+1, 1):
+#     Lst1.append(i)
+# print(Lst1[int(input('Введите x:')) - 1] * Lst1[int(input('Введите b:')) - 1])
 
 
 # Задание 5 Реализуйте алгоритм перемешивания списка.
-import random
+# import random
+#
+#
+# def mix_list(list_orig):
+#     lst_m: list = list_orig[:]
+#     for i in range(len(lst_m)):
+#         ran_ind = random.randint(0, len(lst_m) - 1)
+#         temp = lst_m[i]
+#         lst_m[i] = lst_m[ran_ind]
+#         lst_m[ran_ind] = temp
+#     return lst_m
 
-
-def mix_list(list_orig):
-    lst_m: list = list_orig[:]
-    for i in range(len(lst_m)):
-        ran_ind = random.randint(0, len(lst_m) - 1)
-        temp = lst_m[i]
-        lst_m[i] = lst_m[ran_ind]
-        lst_m[ran_ind] = temp
-    return lst_m
-
-
-spis = [int(i) for i in input('Введите значения элементов через пробел: ').split()]
-print('Оригинальный список:')
-print(spis)
-mixed = mix_list(spis)
-print('Перемешанный список:')
-print(mixed)
+#
+# spis = [int(i) for i in input('Введите значения элементов через пробел: ').split()]
+# print('Оригинальный список:')
+# print(spis)
+# mixed = mix_list(spis)
+# print('Перемешанный список:')
+# print(mixed)
 
 # Задание 6 Напишите программу, в которой пользователь будет задавать две строки,
 # а программа - определять количество вхождений одной строки в другой.
