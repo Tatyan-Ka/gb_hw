@@ -33,7 +33,7 @@
 - Удаление записи"""
 from tkinter.filedialog import askopenfilename
 import file_work
-import interfaces
+import interface_spr
 
 # append_rec('phone_book.txt') - добавление записи с консоли
 # file_work.show_all('phone_book.txt') - показать все записи
@@ -42,6 +42,6 @@ import interfaces
 # count_rows(f) - считает кол-во строк в файле
 
 print('>--------** Телефонный справочник **--------<')
-n = interfaces.menushka()
-interfaces.vybor(n)
+n = interface_spr.menushka()
+interface_spr.vybor(n)
 print('До свидания. Хорошего дня!')
