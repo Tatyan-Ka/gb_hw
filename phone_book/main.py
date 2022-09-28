@@ -42,6 +42,5 @@ import interface_spr
 # count_rows(f) - считает кол-во строк в файле
 
 print('>--------** Телефонный справочник **--------<')
-n = interface_spr.menushka()
-interface_spr.vybor(n)
-print('До свидания. Хорошего дня!')
+interface_spr.menushka()
+
